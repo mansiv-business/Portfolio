@@ -4,7 +4,7 @@
     text-decoration:none;
     list-style-type:none;
     outline: none;
-    box-shadow: border-box;
+    box-sizing: border-box;
 }
 html{
     scroll-behavior: smooth;
@@ -724,6 +724,7 @@ p.darkParagraph,a.darkParagraph{
 .footer.darkFooter{
     background: linear-gradient(99.03deg, #171976 0.63%, #7C1EBC 88.53%);
 }
+
 
 
 
