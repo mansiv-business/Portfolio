@@ -631,6 +631,7 @@ span{
     }
     .footer{
         gap: 6rem;
+        margin-right: none;
 }
 
 }
@@ -651,6 +652,14 @@ span{
 
     .contact-form{
         padding: 0 0.5rem;
+    }
+    .footer-list{
+        gap: 2rem;
+        font-size: 1.9rem;
+    }
+    .footer-end p{
+        text-align: center;
+        font-weight: 600;
     }
 }
 
@@ -688,4 +697,5 @@ p.darkParagraph,a.darkParagraph{
 .footer.darkFooter{
     background: linear-gradient(99.03deg, #171976 0.63%, #7C1EBC 88.53%);
 }
+
 
