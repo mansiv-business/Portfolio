@@ -636,19 +636,21 @@ span{
 }
 
 @media (max-width:600px) {
-
+    .hero-desc{
+        padding-top:3rem;
+    }
     .hero-img{
-        width:85%;
-        height:85%;
+        width:90%;
+        height:90%;
         margin: 0 auto;
     }
 
     .about-section{
-        padding:5rem;
+        padding:1rem;
     }
 
     .contact-form{
-        padding: 0 2rem;
+        padding: 0 0.5rem;
     }
 }
 
@@ -686,3 +688,4 @@ p.darkParagraph,a.darkParagraph{
 .footer.darkFooter{
     background: linear-gradient(99.03deg, #171976 0.63%, #7C1EBC 88.53%);
 }
+
