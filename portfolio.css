@@ -4,6 +4,7 @@
     text-decoration:none;
     list-style-type:none;
     outline: none;
+    box-shadow: border-box;
 }
 html{
     scroll-behavior: smooth;
@@ -59,7 +60,7 @@ h2{
 h3{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-size: 2.8rem;
+    font-size: 2.6rem;
 }
 h4{
     font-family: "Poppins", sans-serif;
@@ -124,7 +125,7 @@ i{
 }
 .hero-img img{
     width: 70%;
-    height: 70%;
+    height: 83%;
     border-radius: 50%;
 }
 .hero-img img{
@@ -296,7 +297,7 @@ span{
 }
 .service-div{
     position: relative;
-    height: 100rem;
+    height: 105rem;
     margin-top: 10rem;
 }
 .service-div div{
@@ -505,15 +506,16 @@ span{
     
     i{
         visibility: visible;
-        font-size: 2rem;
-        padding:1rem;
+        font-size: 2.2rem;
+        padding:0.8em;
+        padding-right: 3.8rem;
         z-index: 20;
         position:fixed;
         top:1rem;
         left:1rem;
         background-color:#873fa6;
         color:white;
-        border-radius: 1rem;
+        border-radius: 1.3rem;
     }
     .navbar{
         flex-direction: column;
@@ -665,8 +667,6 @@ span{
 
 
 
-
-
 /*dark mode section*/
 
 
@@ -697,5 +697,6 @@ p.darkParagraph,a.darkParagraph{
 .footer.darkFooter{
     background: linear-gradient(99.03deg, #171976 0.63%, #7C1EBC 88.53%);
 }
+
 
 
