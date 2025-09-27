@@ -44,6 +44,7 @@ html{
 .hr2{
     background-color:white;
     box-shadow: 0 0 0.5rem 0.1rem white;
+    width: 100%;
 }
 
 
@@ -420,6 +421,7 @@ span{
 
     padding: 5rem;
     gap: 4rem;
+    width: 100%;
 }
 .footer-list{
     display:flex;
@@ -508,7 +510,7 @@ span{
         visibility: visible;
         font-size: 2.2rem;
         padding:0.8em;
-        padding-right: 3.8rem;
+        padding-right: 3.4rem;
         z-index: 20;
         position:fixed;
         top:1rem;
@@ -664,6 +666,31 @@ span{
         font-weight: 600;
     }
 }
+@media (max-width: 400px) {
+    html{
+        font-size: 52%;
+    }
+    .h1{
+        font-size: 3.5rem;
+    }
+    
+    .portfolio-desktop{
+        height: 65rem;
+    }
+    .portfolio-mobile img{
+        width: 55%;
+        height: 35rem;
+    } 
+    .portfolio-desktop img{
+        width: 90%;
+        height: 35rem;  
+    }
+    .about-me{
+        padding: 2rem;
+        width: 90%;
+        margin:auto;
+    }
+}
 
 
 
@@ -697,6 +724,7 @@ p.darkParagraph,a.darkParagraph{
 .footer.darkFooter{
     background: linear-gradient(99.03deg, #171976 0.63%, #7C1EBC 88.53%);
 }
+
 
 
 
