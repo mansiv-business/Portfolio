@@ -678,17 +678,20 @@ span{
         height: 65rem;
     }
     .portfolio-mobile img{
-        width: 55%;
+        width: 65%;
         height: 35rem;
     } 
     .portfolio-desktop img{
-        width: 90%;
-        height: 35rem;  
+        width: 92%;
+        height: 28rem;  
     }
     .about-me{
         padding: 2rem;
         width: 90%;
         margin:auto;
+    }
+    .service-section{
+        padding: 3rem;
     }
 }
 
@@ -724,6 +727,7 @@ p.darkParagraph,a.darkParagraph{
 .footer.darkFooter{
     background: linear-gradient(99.03deg, #171976 0.63%, #7C1EBC 88.53%);
 }
+
 
 
 
