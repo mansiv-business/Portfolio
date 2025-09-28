@@ -510,7 +510,7 @@ span{
         visibility: visible;
         font-size: 2.2rem;
         padding:0.8em;
-        padding-right: 3.4rem;
+        padding-right: 3.6rem;
         z-index: 20;
         position:fixed;
         top:1rem;
@@ -724,6 +724,7 @@ p.darkParagraph,a.darkParagraph{
 .footer.darkFooter{
     background: linear-gradient(99.03deg, #171976 0.63%, #7C1EBC 88.53%);
 }
+
 
 
 
