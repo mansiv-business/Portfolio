@@ -683,7 +683,7 @@ span{
     } 
     .portfolio-desktop img{
         width: 92%;
-        height: 28rem;  
+        height: 20rem;  
     }
     .about-me{
         padding: 2rem;
@@ -727,6 +727,7 @@ p.darkParagraph,a.darkParagraph{
 .footer.darkFooter{
     background: linear-gradient(99.03deg, #171976 0.63%, #7C1EBC 88.53%);
 }
+
 
 
 
