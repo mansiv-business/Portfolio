@@ -184,6 +184,49 @@ i{
     font-weight: 500;
 }
 
+/*Work section*/
+
+.work-section{
+    padding: 5rem;
+    position: relative;
+    min-height: 100vh;
+}
+.work-section h1{
+    text-align: center;
+}
+.work-section div{
+    position: absolute;
+    padding:2rem;
+    width: 30%;
+    text-align: center;
+}
+.work-section div p{
+    font-size: 2rem;
+    font-family: "Lato" , sans-serif;
+    line-height: 2.8rem;
+}
+.work-div1{
+    top: 15rem;
+    left: 35%;
+}
+.work-div2{
+    top: 28rem;
+    right: 5%;
+}
+.work-div3{
+    top: 45rem;
+    right: 20%;
+}
+.work-div4{
+    top: 45rem;
+    left: 20%;
+}
+.work-div5{
+    top: 28rem;
+    left: 5%;
+}
+
+
 /*portfolio section*/
 
 .portfolio-section{
@@ -472,6 +515,17 @@ span{
         margin-top: 10rem;
     }
 
+    /*work section*/
+    .work-section div{
+        width: 35%;
+    }
+    .work-div3{
+        right: 15%;
+    }
+    .work-div4{
+        left: 15%;
+    }
+
     /*portfolio section*/
     
     .portfolio-mobile img{
@@ -574,6 +628,23 @@ span{
     }
     .hero-desc p{
         margin-bottom: 2rem;
+    }
+
+    /*work section*/
+    .work-section{
+        position: static;
+        display:flex;
+        flex-direction: column;
+    }
+    .work-section h1{
+        margin-bottom: 3rem;
+    }
+    .work-section div{
+        position: static;
+        width: 100%;
+        text-align:left;
+        margin-top: 3rem;
+        line-height:5rem;
     }
 
     /*portfolio section*/
@@ -736,6 +807,7 @@ p.darkParagraph,a.darkParagraph{
 .footer.darkFooter{
     background: linear-gradient(99.03deg, #171976 0.63%, #7C1EBC 88.53%);
 }
+
 
 
 
