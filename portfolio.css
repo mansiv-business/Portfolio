@@ -10,6 +10,15 @@ html{
     scroll-behavior: smooth;
     font-size: 62.5%;
 }
+div{
+    opacity: 0.3;
+    transform: translateY(10rem);
+}
+div.show{
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
 .card{
     box-shadow: 0 0 0.4rem 0.01rem black;
 }
@@ -691,7 +700,7 @@ span{
         margin:auto;
     }
     .service-section{
-        padding: 3rem;
+        padding: 2rem;
     }
 }
 
@@ -727,6 +736,7 @@ p.darkParagraph,a.darkParagraph{
 .footer.darkFooter{
     background: linear-gradient(99.03deg, #171976 0.63%, #7C1EBC 88.53%);
 }
+
 
 
 
