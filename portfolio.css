@@ -10,14 +10,14 @@ html{
     scroll-behavior: smooth;
     font-size: 62.5%;
 }
-div{
-    opacity: 0.3;
+h1,h2,h3,h4,p{
+    opacity: 0;
     transform: translateY(10rem);
 }
-div.show{
+h1.show,h2.show,h3.show,h4.show,p.show{
     opacity: 1;
     transform: translateY(0);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transition: opacity 1.1s ease, transform 0.6s ease;
 }
 .card{
     box-shadow: 0 0 0.4rem 0.01rem black;
@@ -230,113 +230,23 @@ i{
 /*portfolio section*/
 
 .portfolio-section{
-    min-height:95vh;
-    padding: 5rem;
-}
-.portfolio-section p{
-    font-family: "Lato", sans-serif
-} 
-.portfolio-link{
-    font-size:2.2rem;
-    color:black;
-    font-weight:500;
+    min-height: 150vh;
 }
 .portfolio-section h1{
     text-align: center;
     margin-bottom: 10rem;
 }
-.portfolio-section > p{
-    font-size: 2.5rem;
-    font-weight:500;
-    margin-bottom: 10rem;
+.portfolio-images{
+   overflow: hidden;
+   display:flex;
+   scroll-behavior: smooth;
+}
+.portfolio-images img{
+   width:40%;
+   height:auto;
+   margin: 1rem;
 }
 
-
-.portfolio-desktop{
-    display:flex;
-    height:50rem;
-}
-.portfolio-desktop p{ 
-    flex:1;
-
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 10rem;
-    font-weight: 600;
-}
-.portfolio-desktop div{
-    flex: 1;
-    position:relative;
-}
-.desktop-mockup1{
-    position: absolute;
-    top:10%;
-    right: 5%;
-}
-.desktop-mockup2{
-    position: absolute;
-    top:9rem;
-    right: 25%;
-}
-.portfolio-desktop img{
-    width: 75%;
-    height: 25rem;
-}
-
-.portfolio-mobile{
-    display:flex;
-    height:60rem;
-}
-.portfolio-mobile p{ 
-    flex:1;
-
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 15rem;
-    font-weight: 600;
-}
-.portfolio-mobile div{
-    flex: 1;
-    position:relative;
-}
-
-.portfolio-mobile img{
-    width: 45%;
-    height: 35rem;
-}
-.mobile-mockup1{
-    position: absolute;
-    top:0;
-    left: 10%;
-}
-.mobile-mockup2{
-    position: absolute;
-    top:5rem;
-    left: 30%;
-}
-
-span{
-    display:none;
-}
-
-.project-desc{
-    font-family: "Lato" , sans-serif;
-    font-size: 1.8rem;
-    letter-spacing: 0.05rem;
-    word-spacing: 0.09rem;
-    line-height: 2.5rem;
-    background: linear-gradient(180deg, #CBC0FE 0%, #B8CEFF 100%);
-    padding: 1rem;
-    border-radius: 2rem;
-    border-top-left-radius: 0;
-    position: relative;
-    top:-3rem;
-    left:32rem;
-
-    display:block;
-    width:57rem;
-    height:14rem;
-}
 
 /*service section*/
 
@@ -528,11 +438,8 @@ span{
 
     /*portfolio section*/
     
-    .portfolio-mobile img{
-       width: 55%;
-    }
-    .portfolio-desktop img{
-       width: 85%;
+    .portfolio-section{
+        min-height:70vh;
     }
     /*service section*/
 
@@ -649,33 +556,11 @@ span{
 
     /*portfolio section*/
 
-    .portfolio-desktop{
-        flex-direction: column;
-        height:75rem;
+    .portfolio-images img{
+        width:55%;
     }
-    .portfolio-desktop div{
-        flex: 5;
-    }
-    .desktop-mockup1{
-        position: absolute;
-        top:1%;
-        right: 0%;
-    }
-    .desktop-mockup2{
-        position: absolute;
-        top:9rem;
-        right: 20%;
-    }     
-    .portfolio-mobile{
-        flex-direction: column;
-        height: 75rem;
-    }
-
-    .project-desc{
-        top: 1rem;
-        left: 1rem;
-        width: 40rem;
-        height:20rem;
+    .portfolio-section{
+        min-height: 70vh;
     }
     /*service section*/
 
@@ -745,6 +630,9 @@ span{
         text-align: center;
         font-weight: 600;
     }
+    .portfolio-images img{
+        width:90%;
+    }
 }
 @media (max-width: 400px) {
     html{
@@ -807,6 +695,7 @@ p.darkParagraph,a.darkParagraph{
 .footer.darkFooter{
     background: linear-gradient(99.03deg, #171976 0.63%, #7C1EBC 88.53%);
 }
+
 
 
 
