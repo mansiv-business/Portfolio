@@ -1,4 +1,5 @@
-const divs = document.querySelectorAll("div");
+const divs = document.querySelectorAll("h1,h2,h3,h4,p");
+const img = document.querySelector(".portfolio-images");
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -11,3 +12,11 @@ const observer = new IntersectionObserver((entries) => {
 })
 
 divs.forEach(div => observer.observe(div))
+
+img.addEventListener('wheel', (e) => {
+  // Prevent vertical scroll
+  e.preventDefault();
+
+  // Scroll horizontally
+  img.scrollLeft += e.deltaY * 10;
+}, { passive: false }); // Important to allow preventDefault
