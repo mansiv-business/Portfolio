@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
+    <div id="preloader" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: white; display: flex; align-items: center; justify-content: center; z-index: 100; transition: opacity 0.8s ease, visibility 0.8s ease;">
+        <i style="font-size: 5rem; text-align: center; color: black;">Mansiv Ferdous</i>
+    </div>
+
+
+    <div>
     <i class="fa-solid fa-bars" id="nav-icon"></i>
     <header class="navbar">
         <ul class="nav-list">
@@ -169,12 +175,32 @@
         </div>
     </footer>
 
+    </div>
+
     <script type="module" src="portfolio3.js"></script>
     <script type="module" src="portfolio2.js"></script>
     <script type="module" src="portfolio.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+          const preloader = document.getElementById('preloader');
+          const content = document.getElementById('content');
+    
+          setTimeout(() => {content.style.display = 'block';},1701)
+    
+          setTimeout(() => {
+            preloader.style.opacity = '0';
+            preloader.style.visibility = 'hidden';
+          },900)
+    
+          setTimeout(() => {
+            preloader.remove();
+          },1700);
+        });
+  </script>
 </body>
 
 </html>
+
 
 
 
