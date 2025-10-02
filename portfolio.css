@@ -80,7 +80,7 @@ h4{
 
 
 /*header section*/
-i{
+#nav-icon{
     font-size:0;
 }
 .navbar{
@@ -420,7 +420,7 @@ i{
 }
 .profile-desc{
     display:flex;
-    gap: 1rem;
+    gap: 2rem;
     flex-direction: column;
     margin-top:3rem;
 }
@@ -442,7 +442,7 @@ i{
     gap: 4rem;
 }
 .blog-desc h1{
-    line-height: 5rem;
+    line-height: 5.2rem;
 }
 .blog-desc p{
     font-size: 2rem;
@@ -522,7 +522,7 @@ i{
 @media (max-width:768px) {
 
     
-    i{
+    #nav-icon{
         visibility: visible;
         font-size: 2.2rem;
         padding:0.8em;
@@ -708,7 +708,7 @@ i{
         height: 20rem;  
     }
     .about-me{
-        padding: 2rem;
+        padding: 4rem 2rem;
         width: 90%;
         margin:auto;
     }
@@ -749,6 +749,7 @@ p.darkParagraph,a.darkParagraph{
 .footer.darkFooter{
     background: linear-gradient(99.03deg, #171976 0.63%, #7C1EBC 88.53%);
 }
+
 
 
 
