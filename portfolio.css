@@ -750,10 +750,13 @@ h4{
         padding: 2rem;
     }
     .package-section{
-        padding: 0rem;
+        padding: 2rem;
     }
     .packages{
-        gap: 0rem;
+        gap: 1rem;   
+    }
+    .package li{
+        font-size: 2rem;
     }
 }
 
@@ -789,6 +792,7 @@ p.darkParagraph,a.darkParagraph,li.darkParagraph{
 .footer.darkFooter{
     background: linear-gradient(99.03deg, #171976 0.63%, #7C1EBC 88.53%);
 }
+
 
 
 
