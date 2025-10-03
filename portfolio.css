@@ -39,12 +39,6 @@ h1.show,h2.show,h3.show,h4.show,p.show{
     word-spacing: 0.1rem;
     letter-spacing: 0.03rem;
 }
-.special-offer{
-    text-align:center;
-    font-size: 2.3rem;
-    font-family: "Lato" , sans-serif;
-    font-weight:500;
-}
 .hr1{
     background: linear-gradient(90deg, #6780FF 0%, #8529F5 100%);
     height:0.2rem;
@@ -300,6 +294,36 @@ h4{
     right: 40rem;
     top: 75rem;
     text-align: center;
+}
+
+/*Packages starts here*/
+
+.package-section h1{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.package-section h4{
+    margin-top: 4rem;
+    text-align: center;
+}
+.packages{
+    display:flex;
+    width:100%;
+    flex-wrap: wrap;
+}
+.package{
+    font-size: 1.9rem;
+    padding: 5rem;
+    flex:1;
+}
+.package h3{
+    margin-bottom: 2rem;
+}
+.package li{
+    margin-top: 1rem;
+    font-family: "Lato" , sans-serif;
+    font-weight: 520;
+    list-style-type:disc;
 }
 
 /*contact section starts here*/
@@ -623,6 +647,16 @@ h4{
         position: static;
         width:80%;
     }
+    
+    /*package-section*/
+    .package-section{
+        padding: 2rem;
+    }
+    .packages{
+        gap: 2rem;
+    }
+
+    
     /*contact section*/
 
     .contact-div{
@@ -715,6 +749,12 @@ h4{
     .service-section{
         padding: 2rem;
     }
+    .package-section{
+        padding: 0rem;
+    }
+    .packages{
+        gap: 0rem;
+    }
 }
 
 
@@ -749,6 +789,7 @@ p.darkParagraph,a.darkParagraph{
 .footer.darkFooter{
     background: linear-gradient(99.03deg, #171976 0.63%, #7C1EBC 88.53%);
 }
+
 
 
 
