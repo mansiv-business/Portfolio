@@ -782,13 +782,14 @@ h4{
 h1.darkHeading,h2.darkHeading,h3.darkHeading,h4.darkHeading{
     color:white;
 }
-p.darkParagraph,a.darkParagraph{
+p.darkParagraph,a.darkParagraph,li.darkParagraph{
     color:#D9D9D9;
 }
 
 .footer.darkFooter{
     background: linear-gradient(99.03deg, #171976 0.63%, #7C1EBC 88.53%);
 }
+
 
 
 
