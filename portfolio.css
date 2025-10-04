@@ -308,7 +308,6 @@ h4{
 }
 .packages{
     display:flex;
-    width:100%;
     flex-wrap: wrap;
     max-width: 100%;
 }
@@ -655,6 +654,7 @@ h4{
     }
     .packages{
         gap: 2rem;
+        flex-direction: column;
     }
 
     
@@ -793,6 +793,7 @@ p.darkParagraph,a.darkParagraph,li.darkParagraph{
 .footer.darkFooter{
     background: linear-gradient(99.03deg, #171976 0.63%, #7C1EBC 88.53%);
 }
+
 
 
 
