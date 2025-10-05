@@ -8,7 +8,7 @@
 }
 html{
     scroll-behavior: smooth;
-    font-size: 62.5%;
+    font-size: 10px;
 }
 body{
     background-color: white;
@@ -484,7 +484,7 @@ h4{
 @media (max-width:992px) {
 
     html{
-        font-size: 56%;
+        font-size: 9px;
     }
 
 
@@ -492,7 +492,7 @@ h4{
 
     .hero-img img{
         width: 80%;
-        height: 60%;
+        height:auto;
         border-radius: 50%;
         margin-top: 10rem;
     }
@@ -726,7 +726,7 @@ h4{
     }
     .packages{
          width: 85%;
-        margin-left: 3%;
+        margin-left: 5%;
     }
     .package{
         padding: 5rem 4rem;
@@ -734,7 +734,7 @@ h4{
 }
 @media (max-width: 400px) {
     html{
-        font-size: 52%;
+        font-size: 8px;
     }
     .h1{
         font-size: 3.5rem;
@@ -795,6 +795,7 @@ p.darkParagraph,a.darkParagraph,li.darkParagraph{
 .footer.darkFooter{
     background: linear-gradient(99.03deg, #171976 0.63%, #7C1EBC 88.53%);
 }
+
 
 
 
