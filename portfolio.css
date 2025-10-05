@@ -172,11 +172,11 @@ h4{
     text-align: center;
 }
 .about-me p{
-    font-size: 2rem;
+    font-size: 1.93rem;
     font-family: "Open Sans", sans-serif;
     line-height: 3.15rem;
     font-weight: 500;
-    margin-top: 1rem:
+    margin-top: 1rem;
 }
 
 /*Work section*/
@@ -785,6 +785,7 @@ p.darkParagraph,a.darkParagraph,li.darkParagraph{
 .footer.darkFooter{
     background: linear-gradient(99.03deg, #171976 0.63%, #7C1EBC 88.53%);
 }
+
 
 
 
