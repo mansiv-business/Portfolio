@@ -656,7 +656,7 @@ h4{
         gap: 2rem;
         flex-direction: column;
         width: 80%;
-        margin: auto;
+        margin-right: 10%;
     }
 
     
@@ -726,6 +726,7 @@ h4{
     }
     .packages{
          width: 90%;
+        margin-right: 5%;
     }
 }
 @media (max-width: 400px) {
@@ -791,6 +792,7 @@ p.darkParagraph,a.darkParagraph,li.darkParagraph{
 .footer.darkFooter{
     background: linear-gradient(99.03deg, #171976 0.63%, #7C1EBC 88.53%);
 }
+
 
 
 
