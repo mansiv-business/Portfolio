@@ -1,3 +1,4 @@
+
 *{
     margin:0;
     padding:0;
@@ -61,22 +62,22 @@ h1.show,h2.show,h3.show,h4.show,p.show{
 h1{
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-size: 3.7rem;
+    font-size: clamp(3rem, 2.8vw, 4rem);
 }
 h2{
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-size: 3.2rem;
+    font-size: clamp(2.5rem, 2.2vw, 3rem);
 }
 h3{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-size: 2.6rem;
+    font-size: clamp(2.2rem, 2vw, 2.8rem);
 }
 h4{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-size: 2.2rem;
+    font-size: clamp(1.95rem, 1.8vw, 2.4rem);
 }
 
 
@@ -128,7 +129,7 @@ h4{
 
 .hero-section{
     display:flex;
-    padding: 5rem;
+    padding: min(5rem, 10%);
     min-height: 95vh;
 }
 .hero-img{
@@ -149,7 +150,7 @@ h4{
 .hero-desc p{
     font-family: "Open Sans", sans-serif;
     font-weight: 500;
-    font-size: 2.5rem;
+    font-size: clamp(1.9rem, 4.2vw, 2.5rem);
     line-height: 3.2rem;
 
     margin-top: 1rem;
@@ -167,19 +168,19 @@ h4{
     min-height:95vh;
     display:flex;
     flex-direction: column;
+    padding: min(5rem, 6%);
 }
 .about-me{
-    width: 80%;
-    margin:auto;
-    padding: 5rem;
-    border-radius: 2rem;
+    margin: auto;
+    padding: min(3rem, 5%);
+    border-radius: 1rem;
 
     background: linear-gradient(180deg, #CBC0FE 0%, #B8CEFF 100%);
 
     text-align: center;
 }
 .about-me p{
-    font-size: 1.93rem;
+    font-size: clamp(1.7rem, 3.5vw, 2rem);
     font-family: "Open Sans", sans-serif;
     line-height: 3.15rem;
     font-weight: 500;
@@ -189,7 +190,7 @@ h4{
 /*Work section*/
 
 .work-section{
-    padding: 5rem;
+    padding: min(5rem, 7%);
     position: relative;
     min-height: 100vh;
 }
@@ -203,7 +204,7 @@ h4{
     text-align: center;
 }
 .work-section div p{
-    font-size: 2rem;
+    font-size: clamp(1.8rem, 3.5vw, 2.0rem);
     font-family: "Lato" , sans-serif;
     line-height: 2.8rem;
 }
@@ -254,7 +255,7 @@ h4{
 
 .service-section{
     min-height: 95vh;
-    padding: 5rem;
+    padding: min(5rem, 6%);
     margin-top: 5rem;
 }
 .service-section h1{
@@ -267,12 +268,12 @@ h4{
 }
 .service-div div{
     background: linear-gradient(180deg, #CBC0FE 0%, #B8CEFF 100%);
-    border-radius: 2rem;
-    padding: 3rem;
+    border-radius: 1rem;
+    padding: min(3rem, 5.25%);
 }
 .service-div div p{
     font-family: "Open Sans", sans-serif;
-    font-size: 1.8rem;
+    font-size: clamp(1.65rem, 3.0vw, 1.8rem);
     font-weight: 620;
     line-height: 3rem;
     margin-top: 1rem;
@@ -304,7 +305,9 @@ h4{
 }
 
 /*Packages starts here*/
-
+.package-section{
+    padding: min(5rem, 7%);
+}
 .package-section h1{
     text-align: center;
     margin-bottom: 5rem;
@@ -315,12 +318,15 @@ h4{
 }
 .packages{
     display:flex;
+    width:100%;
     flex-wrap: wrap;
+    max-width:100%;
+    gap: 1rem;
 }
 .package{
-    font-size: 1.9rem;
-    padding: 5rem;
-    flex:1;
+    padding: min(5rem, 10%);
+    flex: 1;
+    width: max(32.75%, 30rem);
 }
 .package h3{
     margin-bottom: 2rem;
@@ -330,6 +336,8 @@ h4{
     font-family: "Lato" , sans-serif;
     font-weight: 520;
     list-style-type:disc;
+    line-height: 2.5rem;
+    font-size: clamp(1.55rem, 3.4vw, 1.75rem);
 }
 
 /*contact section starts here*/
@@ -355,14 +363,14 @@ h4{
     gap: 3rem;
 }
 .contact-list{
-    font-size: 2.1rem;
+    font-size: clamp(1.8rem, 2.5vw, 2.1rem);
     font-family: "Lato" , sans-serif;
     color:black;
 }
 .contact-msg{
     text-align:center;
-    padding: 5rem;
-    font-size: 2.3rem;
+    padding: min(5rem, 8%);
+    font-size: clamp(2rem, 3vw, 2.3rem);
     font-family: "Lato" , sans-serif;
     font-weight: 600;
 }
@@ -379,7 +387,7 @@ h4{
     display:flex;
     gap: 1rem;
     
-    font-size: 2rem;
+    font-size: clamp(1.7rem, 3vw, 2rem);
     padding: 1.5rem 2rem;
     border-radius: 2rem;
     font-family: "Lato" , sans-serif;
@@ -389,7 +397,7 @@ h4{
     border:none;
     background: none;
 
-    font-size: 2rem;
+    font-size: clamp(1.7rem, 3vw, 2rem);
     font-weight: 500;
     letter-spacing: 0.02rem;
     word-spacing: 0.01rem;
@@ -487,11 +495,6 @@ h4{
 
 @media (max-width:992px) {
 
-    html{
-        font-size: 9px;
-    }
-
-
     /*hero section*/
 
     .hero-img img{
@@ -523,25 +526,21 @@ h4{
         height: 120rem;
     }
     .service-div__1{
-        position: absolute;
         width: 42%;
         left: 1rem;
         top:1rem;
     }
     .service-div__2{
-        position: absolute;
         width: 35%;
         right: 1rem;
         top: 25rem;
     }
     .service-div__3{
-        position: absolute;
         width: 40%;
         left: 1rem;
         top: 55rem;
     }
     .service-div__4{
-        position: absolute;
         width: 50%;
         right: 20%;
         top: 90rem;
@@ -554,8 +553,8 @@ h4{
     
     #nav-icon{
         visibility: visible;
-        font-size: 2.2rem;
-        padding:0.8em;
+        font-size: 2.4rem;
+        padding:0.6em;
         padding-right: 3.6rem;
         z-index: 20;
         position:fixed;
@@ -563,7 +562,7 @@ h4{
         left:1rem;
         background-color:#873fa6;
         color:white;
-        border-radius: 1.3rem;
+        border-radius: 0.8rem;
     }
     .navbar{
         flex-direction: column;
@@ -651,17 +650,10 @@ h4{
     }
     .service-div div{
         position: static;
-        width:80%;
+        width: 90%;
     }
     
     /*package-section*/
-    
-    .packages{
-        gap: 2rem;
-        flex-direction: column;
-        width: 80%;
-        margin-left: 9%;
-    }
 
     
     /*contact section*/
@@ -710,10 +702,6 @@ h4{
         margin: 0 auto;
     }
 
-    .about-section{
-        padding:1rem;
-    }
-
     .contact-form{
         padding: 0 0.5rem;
     }
@@ -732,39 +720,6 @@ h4{
          width: 85%;
         margin-left: 5%;
     }
-    .package{
-        padding: 5rem 4rem;
-    }
-}
-@media (max-width: 400px) {
-    html{
-        font-size: 8px;
-    }
-    .h1{
-        font-size: 3.5rem;
-    }
-    
-    .portfolio-desktop{
-        height: 65rem;
-    }
-    .portfolio-mobile img{
-        width: 65%;
-        height: 35rem;
-    } 
-    .portfolio-desktop img{
-        width: 92%;
-        height: 20rem;  
-    }
-    .about-me{
-        padding: 4rem 2rem;
-        width: 90%;
-        margin:auto;
-        border-radius: 0;
-    }
-    .service-section{
-        padding: 2rem;
-    }
-    
 }
 
 
@@ -799,32 +754,4 @@ p.darkParagraph,a.darkParagraph,li.darkParagraph{
 .footer.darkFooter{
     background: linear-gradient(99.03deg, #171976 0.63%, #7C1EBC 88.53%);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
