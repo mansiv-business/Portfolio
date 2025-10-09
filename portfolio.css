@@ -1,4 +1,5 @@
 
+
 *{
     margin:0;
     padding:0;
@@ -17,6 +18,7 @@ html{
 }
 body{
     background-color: white;
+    overflow-x: hidden;
 }
 h1,h2,h3,h4,p{
     opacity: 0;
@@ -95,7 +97,7 @@ h4{
 }
 .nav-list{
     display:flex;
-    font-size: 2rem;
+    font-size: clamp(1.9rem, 2.9vw, 2.1rem);
     gap: 4rem;
 
 }
@@ -180,7 +182,7 @@ h4{
     text-align: center;
 }
 .about-me p{
-    font-size: clamp(1.7rem, 3.5vw, 2rem);
+    font-size: clamp(1.6rem, 3.2vw, 2rem);
     font-family: "Open Sans", sans-serif;
     line-height: 3.15rem;
     font-weight: 500;
@@ -269,7 +271,7 @@ h4{
 .service-div div{
     background: linear-gradient(180deg, #CBC0FE 0%, #B8CEFF 100%);
     border-radius: 1rem;
-    padding: min(3rem, 5.25%);
+    padding: min(3rem, 6%);
 }
 .service-div div p{
     font-family: "Open Sans", sans-serif;
@@ -306,7 +308,7 @@ h4{
 
 /*Packages starts here*/
 .package-section{
-    padding: min(5rem, 7%);
+    padding: min(5rem, 3%);
 }
 .package-section h1{
     text-align: center;
@@ -324,9 +326,9 @@ h4{
     gap: 1rem;
 }
 .package{
-    padding: min(5rem, 10%);
+    padding: min(5rem, 12%);
     flex: 1;
-    width: max(32.75%, 30rem);
+    width: max(33%, 32rem);
 }
 .package h3{
     margin-bottom: 2rem;
@@ -336,8 +338,8 @@ h4{
     font-family: "Lato" , sans-serif;
     font-weight: 520;
     list-style-type:disc;
-    line-height: 2.5rem;
-    font-size: clamp(1.55rem, 3.4vw, 1.75rem);
+    line-height: 2.6rem;
+    font-size: clamp(1.5rem, 3.25vw, 1.75rem);
 }
 
 /*contact section starts here*/
@@ -363,7 +365,7 @@ h4{
     gap: 3rem;
 }
 .contact-list{
-    font-size: clamp(1.8rem, 2.5vw, 2.1rem);
+    font-size: clamp(1.7rem, 3vw, 2.1rem);
     font-family: "Lato" , sans-serif;
     color:black;
 }
@@ -420,18 +422,20 @@ h4{
     align-items: center;
     background: linear-gradient(180deg, #CBC0FE 0%, #B8CEFF 100%);
 
-    padding: 5rem;
+    padding: min(5rem, 7%);
     gap: 4rem;
     width: 100%;
 }
 .footer-list{
     display:flex;
     gap: 3rem;
-    font-size:2rem;
+    font-size: clamp(1.7rem, 3vw, 2rem);
 }
 .footer-contact ul{
     display:flex;
-    gap:4rem;
+    gap: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .footer-offer{
     display:flex;
@@ -440,10 +444,11 @@ h4{
     gap: 1rem;
 }
 .footer-end p{
-    font-size: 2.1rem;
+    font-size: clamp(1.8rem, 3vw, 2.1rem);
     font-family: "Lato" , sans-serif;
 
     margin-top: 3rem;
+    font-weight: 600;
 }
 
 /*blog section*/
@@ -652,6 +657,9 @@ h4{
         position: static;
         width: 90%;
     }
+    .footer-contact ul{
+        gap: 3rem;
+    }
     
     /*package-section*/
 
@@ -671,12 +679,6 @@ h4{
     }
     /*footer section*/
 
-    .footer-contact ul{
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-        gap: 2rem;
-    }
     .footer{
         gap: 6rem;
         margin-right: none;
@@ -709,10 +711,7 @@ h4{
         gap: 2rem;
         font-size: 1.9rem;
     }
-    .footer-end p{
-        text-align: center;
-        font-weight: 600;
-    }
+    
     .portfolio-images img{
         width:90%;
     }
