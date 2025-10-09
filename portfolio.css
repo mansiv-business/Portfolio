@@ -242,7 +242,7 @@ h4{
     margin-bottom: 10rem;
 }
 .portfolio-images{
-   overflow: scroll;
+   overflow-x: scroll;
    display:flex;
    scroll-behavior: smooth;
 }
@@ -753,4 +753,5 @@ p.darkParagraph,a.darkParagraph,li.darkParagraph{
 .footer.darkFooter{
     background: linear-gradient(99.03deg, #171976 0.63%, #7C1EBC 88.53%);
 }
+
 
