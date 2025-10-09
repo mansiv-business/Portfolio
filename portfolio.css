@@ -65,12 +65,12 @@ h1.show,h2.show,h3.show,h4.show,p.show{
 h1{
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-size: clamp(3rem, 2.8vw, 4rem);
+    font-size: clamp(2.7rem, 2.5vw, 4rem);
 }
 h2{
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-size: clamp(2.5rem, 2.2vw, 3rem);
+    font-size: clamp(2.4rem, 2.2vw, 3rem);
 }
 h3{
     font-family: "Poppins", sans-serif;
@@ -162,7 +162,7 @@ p,a,li{
 .hero-desc p{
     font-family: "Open Sans", sans-serif;
     font-weight: 500;
-    font-size: clamp(1.9rem, 4.2vw, 2.5rem);
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
     line-height: 3.2rem;
 
     margin-top: 1rem;
@@ -183,11 +183,11 @@ p,a,li{
     min-height:95vh;
     display:flex;
     flex-direction: column;
-    padding: min(5rem, 6%);
+    padding: min(5rem, 5%);
 }
 .about-me{
     margin: auto;
-    padding: min(3rem, 5%);
+    padding: min(3rem, 4%);
     border-radius: 1rem;
 
     text-align: center;
@@ -437,8 +437,9 @@ p,a,li{
 }
 .footer-list{
     display:flex;
-    gap: 3rem;
-    font-size: clamp(1.7rem, 3vw, 2rem);
+    gap: min(3rem, 6%);
+    font-size: clamp(1.65rem, 3vw, 2rem);
+    justify-content: center;
 }
 .footer-contact ul{
     display:flex;
@@ -446,18 +447,13 @@ p,a,li{
     flex-wrap: wrap;
     justify-content: center;
 }
-.footer-offer{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
 .footer-end p{
     font-size: clamp(1.8rem, 3vw, 2.1rem);
     font-family: "Lato" , sans-serif;
 
     margin-top: 3rem;
     font-weight: 600;
+    text-align: center;
 }
 
 /*blog section*/
@@ -665,9 +661,6 @@ p,a,li{
         position: static;
         width: 90%;
     }
-    .footer-contact ul{
-        gap: 3rem;
-    }
     
     /*package-section*/
 
@@ -687,10 +680,6 @@ p,a,li{
     }
     /*footer section*/
 
-    .footer{
-        gap: 6rem;
-        margin-right: none;
-    }
     /*blog section*/
 
     .profile-section{
@@ -715,17 +704,9 @@ p,a,li{
     .contact-form{
         padding: 0 0.5rem;
     }
-    .footer-list{
-        gap: 2rem;
-        font-size: 1.9rem;
-    }
     
     .portfolio-images img{
         width:90%;
-    }
-    .packages{
-         width: 85%;
-        margin-left: 5%;
     }
 }
 
